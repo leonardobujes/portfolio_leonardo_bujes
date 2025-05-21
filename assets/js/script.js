@@ -157,3 +157,14 @@ for (let i = 0; i < navigationLinks.length; i++) {
 
   });
 }
+
+// Adiciona funcionalidade ao botão GitHub na sidebar
+const githubButton = document.querySelector('.title[ href ]');
+if (githubButton) {
+  githubButton.addEventListener('click', function () {
+    const url = githubButton.getAttribute('href');
+    if (url) {
+      window.open(url, '_blank');
+    }
+  });
+}
