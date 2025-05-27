@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfólio Leonardo Bujes</title>
+
+  <!--
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./assets/images/favicon.ico" type="image/x-icon">
+
+  <!--
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="stylesheet" href="./assets/css/botao.css">
+
+  <!--
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <!--
+    - #MAIN
+  -->
+
+  <main>
+
+    <!--
+      - #SIDEBAR
+    -->
+
+    <aside class="sidebar" data-sidebar>
+
+      <div class="sidebar-info">
+
+        <figure class="avatar-box">
+          <img src="./assets/images/my-avatar.png" alt="Leonardo Bujes" width="80">
+        </figure>
+
+        <div class="info-content">
+          <h1 class="name" title="Leonardo Bujes">Leonardo Bujes</h1>
+
+          <button class="m-btn" type="button" href="https://github.com/leonardobujes">GitHub</button>
+        <!--
+          Para acessibilidade e semântica, o ideal seria usar <a>, mas o script.js agora garante que o botão funcione como link externo.
+        -->
+        </div>
+
+        <button class="info_more-btn" data-sidebar-btn>
+          <span>Informações</span>
+
+          <ion-icon name="chevron-down"></ion-icon>
+        </button>
+
+      </div>
+
+      <div class="sidebar-info_more">
+
+        <div class="separator"></div>
+
+        <ul class="contacts-list">
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="mail-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Email</p>
+
+              <a href="mailto:bujesdasilva@gmail.com" class="contact-link">bujesdasilva@gmail.com</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="phone-portrait-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Telefone</p>
+
+              <a href="https://wa.me/5583986000101?text=Ol%C3%A1%20Leonardo%20Bujes%2C%20tudo%20bom%3F%20Encontrei%20seu%20portf%C3%B3lio%20no%20GitHub%20e%20gostaria%20de%20conversar%20com%20voc%C3%AA." class="contact-link">+55 (83) 98600-0101</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="calendar-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Aniversário</p>
+
+              <time datetime="1982-06-23">14 de Abril | 32 anos</time>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="location-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Localização</p>
+
+              <address>João Pessoa, PB | BR</address>
+            </div>
+
+          </li>
+
+        </ul>
+
+        <div class="separator"></div>
+
+        <ul class="social-list">
+
+          <li class="social-item">
+            <a href="#" class="social-link">
+              <ion-icon name="logo-facebook"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="#" class="social-link">
+              <ion-icon name="logo-twitter"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="#" class="social-link">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </li>
+
+        </ul>
+
+      </div>
+
+    </aside>
+
+
+
+
+
+    <!--
+      - #main-content
+    -->
+
+    <div class="main-content">
+
+      <!--
+        - #NAVBAR
+      -->
+
+      <nav class="navbar">
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Sobre mim</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Trajetória</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link active" data-nav-link>Portfólio</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Blog</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Contato</button>
+          </li>
+
+        </ul>
+
+      </nav>
+
+
+
+      <!--
+        - #TRAJETORIA
+      -->
+
+      <article class="resume" data-page="trajetória">
+
+        <header>
+          <h2 class="h2 article-title">Trajetória</h2>
+        </header>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Educação</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Sistemas para Internet - UNIESP</h4>
+
+              <span>2025 — Atualmente</span>
+
+              <p class="timeline-text">
+                Graduação Tecnológica em <b>Sistemas para Internet</b> Sistemas para Internet pelo <b>UNIESP Centro universitário</b>, com foco em desenvolvimento de aplicações web e mobile, banco de dados, 
+                segurança da informação e tecnologias emergentes. Formação voltada para criação de soluções digitais completas, com base em práticas 
+                modernas de desenvolvimento e gestão de projetos.
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Marketing - UNIPÊ</h4>
+
+              <span>2014 — 2016</span>
+
+              <p class="timeline-text">
+                Graduação Tecnológica em Marketing pelo <b>UNIPÊ Centro Universitário</b>U, com foco em estratégias de mercado, marketing digital, comportamento do consumidor, branding e análise de dados. 
+                Formação voltada para a criação de campanhas eficazes e gestão de marcas em ambientes digitais e tradicionais.
+              </p>
+
+            </li>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Gacrom Escola de Efeitos Visuais (Adobe)</h4>
+
+              <span>2014 — 2014</span>
+
+              <p class="timeline-text">
+                Curso de todo o pacote Adobe para audio visual. <b>Adobe Illustrator, Adobe Phtoshop, Adobe Premiere Pro e Adobe After Effects.</b>
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Administração de Empresas - UFPB</h4>
+
+              <span>2011 — 2014 (Interrompido 5º período)</span>
+
+              <p class="timeline-text">
+                Graduação em Administração pela <b>Universidade Federal da Paraíba (UFPB)</b>, com formação sólida em gestão organizacional, liderança, planejamento estratégico e tomada de decisões. O curso capacita para atuar em organizações públicas, 
+                privadas e do terceiro setor, com ênfase em ética, inovação e sustentabilidade. Conta com um corpo docente altamente qualificado, composto majoritariamente por mestres e doutores, e oferece oportunidades de iniciação científica, extensão e integração com programas de pós-graduação.
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Colégio Marista Pio X</h4>
+
+              <span>1999 — 2010</span>
+
+              <p class="timeline-text">
+                Formado do ensino fundamental ao ensino médio, o <b>Marista Pio X</b> é uma das instituições de ensino mais tradicionais da Paraíba, 
+                com mais de 130 anos de história.
+              </p>
+
+            </li>
+
+          </ol>
+
+        </section>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="briefcase-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Experiências Profissionais</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">EMIVE Segurança Eletrônica</h4>
+
+              <span>2024 — 2025</span>
+
+              <p class="timeline-text">
+                <b>Franqueado</b> da maior empresa de Segurança Eletrônica e Monitoramento 24h da América Latina.
+                Responsável pela expansão dos serviços Emive na capital paraibana. Sendo da prospecção, fechamento e acompanhamento do mesmo na minha carteira profissional.
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Seu Novo Apple</h4>
+
+              <span>2022 — 2024</span>
+
+              <p class="timeline-text">
+                Proprietário da loja de produtos Apple, onde atuei como vendedor e técnico de manutenção.
+                Responsável pela venda de produtos novos e seminovos, bem como pela manutenção e venda de produtos Apple, com foco em iPhones, iPads e Macbooks.
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">GM Limpeza</h4>
+
+              <span>2021 — 2022</span>
+
+              <p class="timeline-text">
+                A GM Limpeza é uma das <b>maiores empresas</b> de fornecemento de material de limpeza e higiene da Paraíba. Inicialmente atuei como vendedor frente de loja, me preparando para assumir o setor comercial.
+                Logo após fui promovido a <b>Supervisor Comercial</b>, onde passei a tomar conta de uma quipe com mais de 10 vendedoras, entre frente de loja e televendas. Fui responsável pela <b>implementação de um CRM</b> para o time comercial,
+                transformando as métricas e as análises manuais para um dashboard de acompanhamento em tempo real para a diretoria. Conseguinfo assim um aumento na produtividade da equipe e no faturamento.
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">iPlace Premium Reseller Apple</h4>
+
+              <span>2017 — 2018</span>
+
+              <p class="timeline-text">
+                Meu papel como <b>Consultor Corporativo e Educacional</b> era sobre a venda de toda a linha <b>Apple</b> destinada a empresas e escolas, implementação do ecossistema iOS, 
+                criação e implementação de projetos administrativos e educacionais. Aplicação e desenvolvimento do Apple ClassRoom, aluguel e leasing de iPads, projetos de laboratório educacional e de programação swift.
+              </p>
+
+            </li>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Plasuze Plásticos</h4>
+
+              <span>2011 — 2016</span>
+
+              <p class="timeline-text">
+                Iniciei minha jornada nesta industria como <b>Auxiliar Administrativo</b>, passei a produzir, organização e alimentar de documentos internos através de sistemas, além de planilhas sobre informações de clientes, processos, pedidos, controles financeiros e cadastro de produtos. 
+                Tive uma participação ativa da construção do site da empresa como na nova identidade visual e catálogo da mesma. Fui <b>promovido para o Setor de Compras</b> administrativas e fabris de toda a empresa, negociação de preço com fornecedores; e controle de estoque.
+                Logo depois fui convidado a fazer parte de <b>coordenar o time do comercial</b> interno e representantes externos, criar e realizar trenamentos, estabelecer e cumprir metas de vendas mensais e prospectar novos clientes. Criação de campanhas promocionais internas e externas para impulsionar as vendas,
+                desenvolvimento do pós venda da empresa, e-mail marketing, geração de leads e trabalho nas redes sociais.
+              </p>
+
+            </li>
+
+          </ol>
+
+        </section>
+
+        <section class="skill">
+
+          <h3 class="h3 skills-title">Minhas Habilidades</h3>
+
+          <ul class="skills-list content-card">
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Web design</h5>
+                <data value="80">80%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 80%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Graphic design</h5>
+                <data value="70">70%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 70%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Branding</h5>
+                <data value="90">90%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 90%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Front-end</h5>
+                <data value="70">70%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 70%;"></div>
+              </div>
+
+            </li>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Back-end</h5>
+                <data value="50">50%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 50%;"></div>
+              </div>
+
+            </li>
+
+          </ul>
+
+        </section>
+
+      </article>
+
+
+
+
+
+
+
+
+
+
+
+    <!--
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+
+  <!--
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
